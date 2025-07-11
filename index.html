@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cavit Özbay</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style/w3.css">
+<link rel="stylesheet" href="style/mine.css">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body class="mainbody">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding sidebar"  id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" id="topbar-close">Close Menu</a>
+  <div class="w3-container">
+    <img class="img-responsive mypic" src="img/mypic.jpg" alt="" ><br>
+    <h3 class="w3-padding-32 sidebar-name" style="text-align: center;"><b>Cavit Özbay</b></h3>
+  </div>
+  <div class="w3-bar-block">    
+    
+      <a href="#contentpageid1" onclick="w3_close()" class="w3-bar-item w3-button sidebar-button">About Me</a> 
+    
+      <a href="#contentpageid2" onclick="w3_close()" class="w3-bar-item w3-button sidebar-button">Publications</a> 
+    
+      <a href="#contentpageid3" onclick="w3_close()" class="w3-bar-item w3-button sidebar-button">Activities</a> 
+    
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding topbar">
+  <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()" id="topbar-button">☰</a>
+  <!-- <span>Cavit Özbay</span> -->
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main contentbar" style="margin-left:340px;margin-right:40px;margin-top:80px;max-width:1000px">
+
+  <!-- <div class="w3-container" style="margin-top:80px" id="headerr">
+  </div> -->
+  
+  
+    <div class="w3-container contentpage" id="contentpageid1" >
+      <h1 class="w3-xxxlarge pagetitle"><b>About Me.</b></h1>
+      <hr class="w3-round titlesep">
+      <p>
+    I am a PhD student at the Hasso Plattner Institute, University of Potsdam, under the supervision of <a href="https://hpi.de/lehmann/home.html">Anja Lehmann</a>. 
+    Before joining HPI, I earned my MSc in Computer Science and Engineering from Sabancı University in 2022. I received my BSc in Computer Engineering from Istanbul Technical University in 2020.
+
+    <h3> Research Interests </h3>
+
+    I am interested in provable security in general. Currently, my research focuses on privacy-preserving authentication and threshold/multi-signatures. My work involves designing new constructions of these schemes &mdash; either generically or based on algebraic assumptions &mdash; and formally analyzing the relationships between various cryptographic primitives.
+</p>
+
+<h3>Contact</h3>
+<p>Email: cavit dot oezbay at hpi dot de</p>
+    </div>
+  
+    <div class="w3-container contentpage" id="contentpageid2" >
+      <h1 class="w3-xxxlarge pagetitle"><b>Publications.</b></h1>
+      <hr class="w3-round titlesep">
+      
+
+
+
+
+
+    <div class="w3-panel paper">
+        <div><b>Commit-and-Prove System for Vectors and Applications to Threshold Signing.</b></div>
+        <div>with Anja Lehmann </div>
+        <div>
+            PKC'25
+            <span class="paperlinks">
+
+                
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid1" href="javascript:void(0);">Abstract</a>]
+                
+
+                
+                    [<a class="eprintlink" target="_blank" href="https://eprint.iacr.org/2025/355">Eprint</a>]
+                
+                
+                
+                    [<a class="publishedlink" target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-91826-1_7">Published</a>]
+                
+
+                
+            </span>       
+        </div>
+        
+            <div class="collapse" id="publishedpaperid1"><i>Abstract:</i>  Multi-signatures allow to combine several individual signatures into a compact one and verify it against a short aggregated key. Compared to threshold signatures, multi-signatures enjoy non-interactive key generation but give up on the threshold-setting. Recent works by Das et al.(CCS'23) and Garg et al.(S&P'24) show how multi-signatures can be turned into schemes that enable efficient verification when an ad hoc threshold &mdash; determined only at verification &mdash; is satisfied. This allows to keep the simple key generation of multi-signatures and support flexible threshold settings in the signing process later on. Both works use the same idea of combining BLS multi-signatures with inner-product proofs over committed keys. Das et al. give a somewhat generic proof from both building blocks, which we show to be flawed, whereas Garg et al. give a direct proof for the combined construction in the algebraic group model.
+            </div> 
+        
+
+    </div>
+
+
+
+    <div class="w3-panel paper">
+        <div><b>Privacy-Preserving Multi-Signatures: Generic Techniques and Constructions Without Pairings.</b></div>
+        <div>with Calvin Abou Haidar, Dipayan Das, Anja Lehmann, and Octavio Perez Kempner </div>
+        <div>
+            PKC'25
+            <span class="paperlinks">
+
+                
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid2" href="javascript:void(0);">Abstract</a>]
+                
+
+                
+                    [<a class="eprintlink" target="_blank" href="https://eprint.iacr.org/2025/335">Eprint</a>]
+                
+                
+                
+                    [<a class="publishedlink" target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-91823-0_3">Published</a>]
+                
+
+                
+            </span>       
+        </div>
+        
+            <div class="collapse" id="publishedpaperid2"><i>Abstract:</i>  Multi-signatures allow a set of parties to produce a single signature for a common message by combining their individual signatures. The result can be verified using the aggregated public key that represents the group of signers. Very recent work by Lehmann and Özbay (PKC'24) studied the use of multi-signatures for ad-hoc privacy-preserving group signing, formalizing the notion of multi-signatures with probabilistic yet verifiable key aggregation. Moreover, they proposed new BLS-type multi-signatures, allowing users holding a long-term key pair to engage with different groups, without the aggregated key leaking anything about the corresponding group. This enables key-reuse across different groups in a privacy-preserving way. Unfortunately, their technique cannot be applied to Schnorr-type multi-signatures, preventing state-of-the-art multi-signatures to benefit from those privacy features.
+            </div> 
+        
+
+    </div>
+
+
+
+    <div class="w3-panel paper">
+        <div><b>Stronger Security for Threshold Blind Signatures.</b></div>
+        <div>with Anja Lehmann and Phillip Nazarian </div>
+        <div>
+            EUROCRYPT'25
+            <span class="paperlinks">
+
+                
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid3" href="javascript:void(0);">Abstract</a>]
+                
+
+                
+                    [<a class="eprintlink" target="_blank" href="https://eprint.iacr.org/2025/353">Eprint</a>]
+                
+                
+                
+                    [<a class="publishedlink" target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-91124-8_12">Published</a>]
+                
+
+                
+                    [<a class="talklink" target="_blank" href="https://www.youtube.com/watch?v=0DoLLBDi0k4&t=1041s">Talk</a>]
+                
+            </span>       
+        </div>
+        
+            <div class="collapse" id="publishedpaperid3"><i>Abstract:</i>  Blind signatures allow a user to obtain a signature from an issuer in a privacy-preserving way: the issuer neither learns the signed message, nor can link the signature to its issuance. The threshold version of blind signatures further splits the secret key among n issuers, and requires the user to obtain at least t of signature shares in order to derive the final signature. Security should then hold as long as at most t-1 issuers are corrupt. Security for blind signatures is expressed through the notion of one-more unforgeability and demands that an adversary must not be able to produce more signatures than what is considered trivial after its interactions with the honest issuer(s). While one-more unforgeability is well understood for the single-issuer setting, the situation is much less clear in the threshold case: due to the blind issuance, counting which interactions can yield a trivial signature is a challenging task. Existing works bypass that challenge by using simplified models that do not fully capture the expectations of the threshold setting. In this work, we study the security of threshold blind signatures, and propose a framework of one-more unforgeability notions where the adversary can corrupt (c &lt t) issuers. Our model is generic enough to capture both interactive and non-interactive protocols, and it provides a set of natural properties with increasingly stronger guarantees, giving the issuers gradually more control over how their shares can be combined. As a point of comparison, we reconsider the existing threshold blind signature models and show that their security guarantees are weaker and less clearly comprehensible than they seem. We then re-assess the security of existing threshold blind signature schemes &mdash; BLS-based and Snowblind &mdash; in our framework, and show how to lift them to provide stronger security.
+            </div> 
+        
+
+    </div>
+
+
+
+    <div class="w3-panel paper">
+        <div><b>OPPID: Single Sign-On with Oblivious Pairwise Pseudonyms.</b></div>
+        <div>with Maximilian Kroschewski and Anja Lehmann </div>
+        <div>
+            To appear at PETS'25
+            <span class="paperlinks">
+
+                
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid4" href="javascript:void(0);">Abstract</a>]
+                
+
+                
+                    [<a class="eprintlink" target="_blank" href="https://eprint.iacr.org/2024/1124">Eprint</a>]
+                
+                
+                
+                    [<a class="publishedlink" target="_blank" href="https://petsymposium.org/popets/2025/popets-2025-0080.php">Published</a>]
+                
+
+                
+            </span>       
+        </div>
+        
+            <div class="collapse" id="publishedpaperid4"><i>Abstract:</i>  Single Sign-On (SSO) allows users to conveniently authenticate to many Relying Parties (RPs) through a central Identity Provider (IdP). SSO supports unlinkable authentication towards the RPs via pairwise pseudonyms, where the IdP assigns the user an RP-specific pseudonym. This feature has been rolled out prominently within Apple's SSO service. While establishing unlinkable identities provides privacy towards RPs, it actually emphasizes the main privacy problem of SSO: with every authentication request, the IdP learns the RP that the user wants to access. Solutions to overcome this limitation exist, but either assume users to behave honestly or require them to manage long-term cryptographic keys. In this work, we propose the first SSO system that can provide such pseudonymous authentication in an unobservable yet strongly secure and convenient manner. That is, the IdP blindly derives the user's pairwise pseudonym for the targeted RP without learning the RP's identity and without requiring key material handled by the user. We formally define the desired security and privacy properties for such unlinkable, unobservable, and strongly secure SSO. In particular, our model includes the often neglected RP authentication: the IdP typically wants to limit its services to registered RPs only and thus must be able to (blindly) verify that it issues the token and pseudonym to such a registered RP. We propose a simple construction that combines signatures with efficient proofs-of-knowledge with a blind, yet verifiable, evaluation of the Hashed-Diffie-Hellman PRF. We prove the security of our construction and demonstrate its efficiency through a prototypical implementation, which requires a running time of 2-12ms per involved party.
+            </div> 
+        
+
+    </div>
+
+
+
+    <div class="w3-panel paper">
+        <div><b>Multi-Signatures for Ad-hoc and Privacy-Preserving Group Signing.</b></div>
+        <div>with Anja Lehmann </div>
+        <div>
+            PKC'24
+            <span class="paperlinks">
+
+                
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid5" href="javascript:void(0);">Abstract</a>]
+                
+
+                
+                    [<a class="eprintlink" target="_blank" href="https://eprint.iacr.org/2023/1884">Eprint</a>]
+                
+                
+                
+                    [<a class="publishedlink" target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-57718-5_7">Published</a>]
+                
+
+                
+                    [<a class="talklink" target="_blank" href="https://www.youtube.com/watch?v=Wdhlp2NKZDA&t=2143s">Talk</a>]
+                
+            </span>       
+        </div>
+        
+            <div class="collapse" id="publishedpaperid5"><i>Abstract:</i>  Multi-signatures allow to combine individual signatures from different signers on the same message into a short aggregated signature. Newer schemes further allow to aggregate the individual public keys, such that the combined signature gets verified against a short aggregated key. This makes them a versatile alternative to threshold or distributed signatures: the aggregated key can serve as group key, and signatures under that key can only be computed with the help of all signers. What makes multi-signatures even more attractive is their simple key management, as users can re-use the same secret key in several and ad-hoc formed groups. In that context, it will be desirable to not sacrifice privacy as soon as keys get re-used and ensure that users are not linkable across groups. In fact, when multi-signatures with key aggregation were proposed, it was claimed that aggregated keys hide the signers' identities or even the fact that it is a combined key at all. In our work, we show that none of the existing multi-signature schemes provide these privacy guarantees when keys get re-used in multiple groups. This is due to the fact that all known schemes deploy deterministic key aggregation. To overcome this limitation, we propose a new variant of multi-signatures with probabilistic yet verifiable key aggregation. We formally define the desirable privacy and unforgeability properties in the presence of key re-use. This also requires to adapt the unforgeability model to the group setting, and ensure that key-reuse does not weaken the expected guarantees. We present a simple BLS-based scheme that securely realizes our strong privacy and security guarantees. We also formalize and investigate the privacy that is possible by deterministic schemes, and prove that existing schemes provide the advertised privacy features as long as one public key remains secret.
+            </div> 
+        
+
+    </div>
+
+
+
+    <div class="w3-panel paper">
+        <div><b>Blacklisting Based Anonymous Authentication Scheme for Sharing Economy.</b></div>
+        <div>with Albert Levi </div>
+        <div>
+            IEEE TDSC'23
+            <span class="paperlinks">
+
+                
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid6" href="javascript:void(0);">Abstract</a>]
+                
+
+                
+                
+                
+                    [<a class="publishedlink" target="_blank" href="https://ieeexplore.ieee.org/document/10089488">Published</a>]
+                
+
+                
+            </span>       
+        </div>
+        
+            <div class="collapse" id="publishedpaperid6"><i>Abstract:</i>  Authentication and blacklisting mechanisms have a key role for service providers to deliver the service to correct users through digital channels. Nevertheless, there always have been concerns about privacy of the users against such mechanisms. The conditional anonymity concept is proposed as a remedy to these concerns. A recent approach in the literature for conditional anonymity is blacklistable anonymous credentials, which allows service providers to blacklist users for an authentication session without identifying the user. In this paper, we improve user anonymity in conditionally anonymous schemes using two complementary mechanisms. First, we define whitelisting property for blacklistable anonymous credentials and give a construction of this scheme. The whitelisting property can be used to unlink an honestly behaved authentication session from the user. Second, we propose an extension of this scheme for a particular use case, sharing economy services. This scheme allows a service provider to blacklist a user only if the user have not returned the shared asset in due time. We benchmark the performance of our schemes by comparing them with the rival schemes. Our experiments show that both of our scheme have comparable performance to previous works.
+            </div> 
+        
+
+    </div>
+
+
+    </div>
+  
+    <div class="w3-container contentpage" id="contentpageid3" >
+      <h1 class="w3-xxxlarge pagetitle"><b>Activities.</b></h1>
+      <hr class="w3-round titlesep">
+      <h3>Subreviewed for</h3>
+<p>ASIACRYPT'25, CRYPTO'23</p>
+
+
+<h3>Teaching</h3>
+<h4>Hasso Plattner Institute (Teaching Assistant)</h4>
+<ul>
+    <li>Current Topics in Cryptography, Winter 24/25</li>
+    <li>Cryptographic Protocols, Summer 23/24</li>
+    <li>Anonymous Credentials, Summer 22/23</li>
+    <li>MLS-based Multi-Client Authentication, Winter 22/23</li>
+</ul>
+<h4>Sabancı University (Teaching Assistant)</h4>
+<ul>
+    <li>Formal Languages and Automata Theory, Winter 20/21, Summer
+    20/21, Winter 21/22, Summer 21/22</li>
+</ul>
+    </div>
+  
+
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

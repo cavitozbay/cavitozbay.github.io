@@ -1,0 +1,74 @@
+{% if preprints|length != 0 %}
+    <h3>Preprints</h3>
+    {% for paper in preprints %}
+        
+        <div class="w3-panel paper">
+        <div><b>{{ paper.title }}.</b></div>
+        <div>with {{ paper.coauthors }} </div>
+        <div>
+            <span class="paperlinks">
+
+                {% if paper.abstract is defined %}
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#preprintpaperid{{loop.index}}" href="javascript:void(0);">Abstract</a>]
+                {% endif %}
+
+                {% if paper.eprint is defined %}
+                    [<a class="eprintlink" target="_blank" href="{{paper.eprint}}">Eprint</a>]
+                {% endif %}
+                
+                {% if paper.published is defined %}
+                    [<a class="publishedlink" target="_blank" href="{{paper.published}}">Published</a>]
+                {% endif %}
+
+                {% if paper.talk is defined %}
+                    [<a class="talklink" target="_blank" href="{{paper.talk}}">Talk</a>]
+                {% endif %}
+            </span>       
+        </div>
+        {% if paper.abstract is defined %}
+            <div class="collapse" id="preprintpaperid{{loop.index}}"><br><i>Abstract:</i> {{paper.abstract}}
+            </div> 
+        {% endif %}
+
+        </div>
+    {% endfor %}
+{% endif %}
+
+{% if preprints|length != 0 %}
+    <h3>Published</h3>
+{% endif %}
+
+{% for paper in published %}
+
+    <div class="w3-panel paper">
+        <div><b>{{ paper.title }}.</b></div>
+        <div>with {{ paper.coauthors }} </div>
+        <div>
+            {{ paper.venue }}
+            <span class="paperlinks">
+
+                {% if paper.abstract is defined %}
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid{{loop.index}}" href="javascript:void(0);">Abstract</a>]
+                {% endif %}
+
+                {% if paper.eprint is defined %}
+                    [<a class="eprintlink" target="_blank" href="{{paper.eprint}}">Eprint</a>]
+                {% endif %}
+                
+                {% if paper.published is defined %}
+                    [<a class="publishedlink" target="_blank" href="{{paper.published}}">Published</a>]
+                {% endif %}
+
+                {% if paper.talk is defined %}
+                    [<a class="talklink" target="_blank" href="{{paper.talk}}">Talk</a>]
+                {% endif %}
+            </span>       
+        </div>
+        {% if paper.abstract is defined %}
+            <div class="collapse" id="publishedpaperid{{loop.index}}"><i>Abstract:</i>  {{paper.abstract}}
+            </div> 
+        {% endif %}
+
+    </div>
+
+{% endfor %}
