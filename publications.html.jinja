@@ -65,7 +65,10 @@
             </span>       
         </div>
         {% if paper.abstract is defined %}
-            <div class="collapse" id="publishedpaperid{{loop.index}}"><i>Abstract:</i>  {{paper.abstract}}
+            <div class="collapse" id="publishedpaperid{{loop.index}}">
+            <div style="display: inline-block;">
+                <p><i>Abstract:</i>  {{paper.abstract}}</p>
+            </div>
             </div> 
         {% endif %}
 

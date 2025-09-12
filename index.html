@@ -79,6 +79,68 @@ body {font-size:16px;}
 
 
     <div class="w3-panel paper">
+        <div><b>Security Analysis of Privately Verifiable Privacy Pass.</b></div>
+        <div>with Konrad Hanff and Anja Lehmann </div>
+        <div>
+            To appear at CCS'25
+            <span class="paperlinks">
+
+                
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid1" href="javascript:void(0);">Abstract</a>]
+                
+
+                
+                
+                
+
+                
+            </span>       
+        </div>
+        
+            <div class="collapse" id="publishedpaperid1">
+            <div style="display: inline-block;">
+                <p><i>Abstract:</i>  Privacy Pass is an anonymous authentication protocol which was initially designed by Davidson et al. (PETS'18) to reduce the number of CAPTCHAs that TOR users must solve. It issues single-use authentication tokens with anonymous and unlinkable redemption guarantees. The issuer and verifier of the protocol share a symmetric key, and tokens are privately verifiable. The protocol has sparked interest from both academia and industry, which led to an Internet Engineering Task Force (IETF) standard. While Davidson et al. formally analyzed the original protocol, the IETF standard introduces several changes to their protocol. Thus, the standardized version's formal security remains unexamined. We fill this gap by analyzing the IETF standard's privately verifiable Privacy Pass protocol. In particular, there are two main discrepancies between the analyzed and standardized version: First, the IETF version introduces a redemption context, that can be used for blindly embedding a validity period into the Privacy Pass tokens. We show that this variant has significant differences to public metadata extension that has been proposed for the same purpose in the literature. Redemption context offers better privacy and security than public metadata. We capture both stronger guarantees through game-based security definitions and show that the currently considered one-more unforgeability notion for Privacy Pass is insufficient when a redemption context is used. Thus, we propose a new property, targeted context unforgeability, and prove its incomparability to one-more unforgeability. Second, Davidson et al. focused on a concrete Diffie-Hellman based construction, whereas the IETF version is built generically from a verifiable oblivious pseudorandom function (VOPRF). Further, the analyzed protocol omitted the full redemption phase needed to prevent double-spending. We prove that the generic IETF construction satisfies the desired security and privacy guarantees covering the full life-cycle of tokens. Our analysis relies on natural security properties of VOPRFs, providing compatibility with any secure VOPRF instantiation. This enables crypto agility, e.g., allowing to switch to efficient quantum-safe VOPRFs when they become available.</p>
+            </div>
+            </div> 
+        
+
+    </div>
+
+
+
+    <div class="w3-panel paper">
+        <div><b>Game Changer: A Modular Framework for OPRF Security.</b></div>
+        <div>with Karla Friedrichs and Anja Lehmann </div>
+        <div>
+            To appear at ASIACRYPT'25
+            <span class="paperlinks">
+
+                
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid2" href="javascript:void(0);">Abstract</a>]
+                
+
+                
+                    [<a class="eprintlink" target="_blank" href="https://eprint.iacr.org/2025/1565">Eprint</a>]
+                
+                
+                
+
+                
+            </span>       
+        </div>
+        
+            <div class="collapse" id="publishedpaperid2">
+            <div style="display: inline-block;">
+                <p><i>Abstract:</i>  Oblivious pseudorandom functions (OPRFs) allow the blind evaluation of a pseudorandom function, which makes them a versatile building block that enjoys usage in numerous applications. So far, security of OPRFs is predominantly captured in the Universal Composability (UC) framework, where an ideal functionality covers the expected security and privacy properties. While the OPRF functionality appears intuitive at first, the ideal-world paradigm also comes with a number of challenges: from imposing idealized building blocks when building OPRFs, to the lack of modularity, and requiring intricate UC knowledge to securely maneuver their usage. Game-based definitions are a simpler way to cover security properties. They model each property in a single game, which grants modularity in formalizing, proving, and using OPRFs. Interestingly, the few game-based works on OPRFs each re-invent the security model, with considerable variation. Thus, the advantages of the game-based approach remain out of reach: definitions are not easily accessible and comparability across works is low. In this work, we therefore systematize all existing notions into a clear, hierarchical framework. We unify or separate properties, making hidden relations explicit. This effort reveals the necessity of two novel properties: an intermediate privacy notion and a stronger unpredictability notion. Finally, we analyze the two most prominent constructions in our framework: HashDH and 2HashDH. The former does not achieve UC security, but has advantages in applications that require key rotation or updatability; yet it lacks a security analysis. We show that it achieves most security properties in our framework. We also observe that HashDH and 2HashDH do not satisfy our strongest privacy notion, indicating that the guarantees by the UC functionality are not as well understood as we might expect them to be. Overall, we hope that our framework facilitates the usage and design of OPRFs.</p>
+            </div>
+            </div> 
+        
+
+    </div>
+
+
+
+    <div class="w3-panel paper">
         <div><b>Commit-and-Prove System for Vectors and Applications to Threshold Signing.</b></div>
         <div>with Anja Lehmann </div>
         <div>
@@ -86,7 +148,7 @@ body {font-size:16px;}
             <span class="paperlinks">
 
                 
-                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid1" href="javascript:void(0);">Abstract</a>]
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid3" href="javascript:void(0);">Abstract</a>]
                 
 
                 
@@ -101,7 +163,10 @@ body {font-size:16px;}
             </span>       
         </div>
         
-            <div class="collapse" id="publishedpaperid1"><i>Abstract:</i>  Multi-signatures allow to combine several individual signatures into a compact one and verify it against a short aggregated key. Compared to threshold signatures, multi-signatures enjoy non-interactive key generation but give up on the threshold-setting. Recent works by Das et al.(CCS'23) and Garg et al.(S&P'24) show how multi-signatures can be turned into schemes that enable efficient verification when an ad hoc threshold &mdash; determined only at verification &mdash; is satisfied. This allows to keep the simple key generation of multi-signatures and support flexible threshold settings in the signing process later on. Both works use the same idea of combining BLS multi-signatures with inner-product proofs over committed keys. Das et al. give a somewhat generic proof from both building blocks, which we show to be flawed, whereas Garg et al. give a direct proof for the combined construction in the algebraic group model.
+            <div class="collapse" id="publishedpaperid3">
+            <div style="display: inline-block;">
+                <p><i>Abstract:</i>  Multi-signatures allow to combine several individual signatures into a compact one and verify it against a short aggregated key. Compared to threshold signatures, multi-signatures enjoy non-interactive key generation but give up on the threshold-setting. Recent works by Das et al.(CCS'23) and Garg et al.(S&P'24) show how multi-signatures can be turned into schemes that enable efficient verification when an ad hoc threshold &mdash; determined only at verification &mdash; is satisfied. This allows to keep the simple key generation of multi-signatures and support flexible threshold settings in the signing process later on. Both works use the same idea of combining BLS multi-signatures with inner-product proofs over committed keys. Das et al. give a somewhat generic proof from both building blocks, which we show to be flawed, whereas Garg et al. give a direct proof for the combined construction in the algebraic group model.</p>
+            </div>
             </div> 
         
 
@@ -117,7 +182,7 @@ body {font-size:16px;}
             <span class="paperlinks">
 
                 
-                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid2" href="javascript:void(0);">Abstract</a>]
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid4" href="javascript:void(0);">Abstract</a>]
                 
 
                 
@@ -132,7 +197,10 @@ body {font-size:16px;}
             </span>       
         </div>
         
-            <div class="collapse" id="publishedpaperid2"><i>Abstract:</i>  Multi-signatures allow a set of parties to produce a single signature for a common message by combining their individual signatures. The result can be verified using the aggregated public key that represents the group of signers. Very recent work by Lehmann and Özbay (PKC'24) studied the use of multi-signatures for ad-hoc privacy-preserving group signing, formalizing the notion of multi-signatures with probabilistic yet verifiable key aggregation. Moreover, they proposed new BLS-type multi-signatures, allowing users holding a long-term key pair to engage with different groups, without the aggregated key leaking anything about the corresponding group. This enables key-reuse across different groups in a privacy-preserving way. Unfortunately, their technique cannot be applied to Schnorr-type multi-signatures, preventing state-of-the-art multi-signatures to benefit from those privacy features.
+            <div class="collapse" id="publishedpaperid4">
+            <div style="display: inline-block;">
+                <p><i>Abstract:</i>  Multi-signatures allow a set of parties to produce a single signature for a common message by combining their individual signatures. The result can be verified using the aggregated public key that represents the group of signers. Very recent work by Lehmann and Özbay (PKC'24) studied the use of multi-signatures for ad-hoc privacy-preserving group signing, formalizing the notion of multi-signatures with probabilistic yet verifiable key aggregation. Moreover, they proposed new BLS-type multi-signatures, allowing users holding a long-term key pair to engage with different groups, without the aggregated key leaking anything about the corresponding group. This enables key-reuse across different groups in a privacy-preserving way. Unfortunately, their technique cannot be applied to Schnorr-type multi-signatures, preventing state-of-the-art multi-signatures to benefit from those privacy features.</p>
+            </div>
             </div> 
         
 
@@ -148,7 +216,7 @@ body {font-size:16px;}
             <span class="paperlinks">
 
                 
-                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid3" href="javascript:void(0);">Abstract</a>]
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid5" href="javascript:void(0);">Abstract</a>]
                 
 
                 
@@ -165,7 +233,10 @@ body {font-size:16px;}
             </span>       
         </div>
         
-            <div class="collapse" id="publishedpaperid3"><i>Abstract:</i>  Blind signatures allow a user to obtain a signature from an issuer in a privacy-preserving way: the issuer neither learns the signed message, nor can link the signature to its issuance. The threshold version of blind signatures further splits the secret key among n issuers, and requires the user to obtain at least t of signature shares in order to derive the final signature. Security should then hold as long as at most t-1 issuers are corrupt. Security for blind signatures is expressed through the notion of one-more unforgeability and demands that an adversary must not be able to produce more signatures than what is considered trivial after its interactions with the honest issuer(s). While one-more unforgeability is well understood for the single-issuer setting, the situation is much less clear in the threshold case: due to the blind issuance, counting which interactions can yield a trivial signature is a challenging task. Existing works bypass that challenge by using simplified models that do not fully capture the expectations of the threshold setting. In this work, we study the security of threshold blind signatures, and propose a framework of one-more unforgeability notions where the adversary can corrupt (c &lt t) issuers. Our model is generic enough to capture both interactive and non-interactive protocols, and it provides a set of natural properties with increasingly stronger guarantees, giving the issuers gradually more control over how their shares can be combined. As a point of comparison, we reconsider the existing threshold blind signature models and show that their security guarantees are weaker and less clearly comprehensible than they seem. We then re-assess the security of existing threshold blind signature schemes &mdash; BLS-based and Snowblind &mdash; in our framework, and show how to lift them to provide stronger security.
+            <div class="collapse" id="publishedpaperid5">
+            <div style="display: inline-block;">
+                <p><i>Abstract:</i>  Blind signatures allow a user to obtain a signature from an issuer in a privacy-preserving way: the issuer neither learns the signed message, nor can link the signature to its issuance. The threshold version of blind signatures further splits the secret key among n issuers, and requires the user to obtain at least t of signature shares in order to derive the final signature. Security should then hold as long as at most t-1 issuers are corrupt. Security for blind signatures is expressed through the notion of one-more unforgeability and demands that an adversary must not be able to produce more signatures than what is considered trivial after its interactions with the honest issuer(s). While one-more unforgeability is well understood for the single-issuer setting, the situation is much less clear in the threshold case: due to the blind issuance, counting which interactions can yield a trivial signature is a challenging task. Existing works bypass that challenge by using simplified models that do not fully capture the expectations of the threshold setting. In this work, we study the security of threshold blind signatures, and propose a framework of one-more unforgeability notions where the adversary can corrupt (c &lt t) issuers. Our model is generic enough to capture both interactive and non-interactive protocols, and it provides a set of natural properties with increasingly stronger guarantees, giving the issuers gradually more control over how their shares can be combined. As a point of comparison, we reconsider the existing threshold blind signature models and show that their security guarantees are weaker and less clearly comprehensible than they seem. We then re-assess the security of existing threshold blind signature schemes &mdash; BLS-based and Snowblind &mdash; in our framework, and show how to lift them to provide stronger security.</p>
+            </div>
             </div> 
         
 
@@ -177,11 +248,11 @@ body {font-size:16px;}
         <div><b>OPPID: Single Sign-On with Oblivious Pairwise Pseudonyms.</b></div>
         <div>with Maximilian Kroschewski and Anja Lehmann </div>
         <div>
-            To appear at PETS'25
+            PETS'25
             <span class="paperlinks">
 
                 
-                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid4" href="javascript:void(0);">Abstract</a>]
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid6" href="javascript:void(0);">Abstract</a>]
                 
 
                 
@@ -196,7 +267,10 @@ body {font-size:16px;}
             </span>       
         </div>
         
-            <div class="collapse" id="publishedpaperid4"><i>Abstract:</i>  Single Sign-On (SSO) allows users to conveniently authenticate to many Relying Parties (RPs) through a central Identity Provider (IdP). SSO supports unlinkable authentication towards the RPs via pairwise pseudonyms, where the IdP assigns the user an RP-specific pseudonym. This feature has been rolled out prominently within Apple's SSO service. While establishing unlinkable identities provides privacy towards RPs, it actually emphasizes the main privacy problem of SSO: with every authentication request, the IdP learns the RP that the user wants to access. Solutions to overcome this limitation exist, but either assume users to behave honestly or require them to manage long-term cryptographic keys. In this work, we propose the first SSO system that can provide such pseudonymous authentication in an unobservable yet strongly secure and convenient manner. That is, the IdP blindly derives the user's pairwise pseudonym for the targeted RP without learning the RP's identity and without requiring key material handled by the user. We formally define the desired security and privacy properties for such unlinkable, unobservable, and strongly secure SSO. In particular, our model includes the often neglected RP authentication: the IdP typically wants to limit its services to registered RPs only and thus must be able to (blindly) verify that it issues the token and pseudonym to such a registered RP. We propose a simple construction that combines signatures with efficient proofs-of-knowledge with a blind, yet verifiable, evaluation of the Hashed-Diffie-Hellman PRF. We prove the security of our construction and demonstrate its efficiency through a prototypical implementation, which requires a running time of 2-12ms per involved party.
+            <div class="collapse" id="publishedpaperid6">
+            <div style="display: inline-block;">
+                <p><i>Abstract:</i>  Single Sign-On (SSO) allows users to conveniently authenticate to many Relying Parties (RPs) through a central Identity Provider (IdP). SSO supports unlinkable authentication towards the RPs via pairwise pseudonyms, where the IdP assigns the user an RP-specific pseudonym. This feature has been rolled out prominently within Apple's SSO service. While establishing unlinkable identities provides privacy towards RPs, it actually emphasizes the main privacy problem of SSO: with every authentication request, the IdP learns the RP that the user wants to access. Solutions to overcome this limitation exist, but either assume users to behave honestly or require them to manage long-term cryptographic keys. In this work, we propose the first SSO system that can provide such pseudonymous authentication in an unobservable yet strongly secure and convenient manner. That is, the IdP blindly derives the user's pairwise pseudonym for the targeted RP without learning the RP's identity and without requiring key material handled by the user. We formally define the desired security and privacy properties for such unlinkable, unobservable, and strongly secure SSO. In particular, our model includes the often neglected RP authentication: the IdP typically wants to limit its services to registered RPs only and thus must be able to (blindly) verify that it issues the token and pseudonym to such a registered RP. We propose a simple construction that combines signatures with efficient proofs-of-knowledge with a blind, yet verifiable, evaluation of the Hashed-Diffie-Hellman PRF. We prove the security of our construction and demonstrate its efficiency through a prototypical implementation, which requires a running time of 2-12ms per involved party.</p>
+            </div>
             </div> 
         
 
@@ -212,7 +286,7 @@ body {font-size:16px;}
             <span class="paperlinks">
 
                 
-                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid5" href="javascript:void(0);">Abstract</a>]
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid7" href="javascript:void(0);">Abstract</a>]
                 
 
                 
@@ -229,7 +303,10 @@ body {font-size:16px;}
             </span>       
         </div>
         
-            <div class="collapse" id="publishedpaperid5"><i>Abstract:</i>  Multi-signatures allow to combine individual signatures from different signers on the same message into a short aggregated signature. Newer schemes further allow to aggregate the individual public keys, such that the combined signature gets verified against a short aggregated key. This makes them a versatile alternative to threshold or distributed signatures: the aggregated key can serve as group key, and signatures under that key can only be computed with the help of all signers. What makes multi-signatures even more attractive is their simple key management, as users can re-use the same secret key in several and ad-hoc formed groups. In that context, it will be desirable to not sacrifice privacy as soon as keys get re-used and ensure that users are not linkable across groups. In fact, when multi-signatures with key aggregation were proposed, it was claimed that aggregated keys hide the signers' identities or even the fact that it is a combined key at all. In our work, we show that none of the existing multi-signature schemes provide these privacy guarantees when keys get re-used in multiple groups. This is due to the fact that all known schemes deploy deterministic key aggregation. To overcome this limitation, we propose a new variant of multi-signatures with probabilistic yet verifiable key aggregation. We formally define the desirable privacy and unforgeability properties in the presence of key re-use. This also requires to adapt the unforgeability model to the group setting, and ensure that key-reuse does not weaken the expected guarantees. We present a simple BLS-based scheme that securely realizes our strong privacy and security guarantees. We also formalize and investigate the privacy that is possible by deterministic schemes, and prove that existing schemes provide the advertised privacy features as long as one public key remains secret.
+            <div class="collapse" id="publishedpaperid7">
+            <div style="display: inline-block;">
+                <p><i>Abstract:</i>  Multi-signatures allow to combine individual signatures from different signers on the same message into a short aggregated signature. Newer schemes further allow to aggregate the individual public keys, such that the combined signature gets verified against a short aggregated key. This makes them a versatile alternative to threshold or distributed signatures: the aggregated key can serve as group key, and signatures under that key can only be computed with the help of all signers. What makes multi-signatures even more attractive is their simple key management, as users can re-use the same secret key in several and ad-hoc formed groups. In that context, it will be desirable to not sacrifice privacy as soon as keys get re-used and ensure that users are not linkable across groups. In fact, when multi-signatures with key aggregation were proposed, it was claimed that aggregated keys hide the signers' identities or even the fact that it is a combined key at all. In our work, we show that none of the existing multi-signature schemes provide these privacy guarantees when keys get re-used in multiple groups. This is due to the fact that all known schemes deploy deterministic key aggregation. To overcome this limitation, we propose a new variant of multi-signatures with probabilistic yet verifiable key aggregation. We formally define the desirable privacy and unforgeability properties in the presence of key re-use. This also requires to adapt the unforgeability model to the group setting, and ensure that key-reuse does not weaken the expected guarantees. We present a simple BLS-based scheme that securely realizes our strong privacy and security guarantees. We also formalize and investigate the privacy that is possible by deterministic schemes, and prove that existing schemes provide the advertised privacy features as long as one public key remains secret.</p>
+            </div>
             </div> 
         
 
@@ -245,7 +322,7 @@ body {font-size:16px;}
             <span class="paperlinks">
 
                 
-                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid6" href="javascript:void(0);">Abstract</a>]
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#publishedpaperid8" href="javascript:void(0);">Abstract</a>]
                 
 
                 
@@ -258,7 +335,10 @@ body {font-size:16px;}
             </span>       
         </div>
         
-            <div class="collapse" id="publishedpaperid6"><i>Abstract:</i>  Authentication and blacklisting mechanisms have a key role for service providers to deliver the service to correct users through digital channels. Nevertheless, there always have been concerns about privacy of the users against such mechanisms. The conditional anonymity concept is proposed as a remedy to these concerns. A recent approach in the literature for conditional anonymity is blacklistable anonymous credentials, which allows service providers to blacklist users for an authentication session without identifying the user. In this paper, we improve user anonymity in conditionally anonymous schemes using two complementary mechanisms. First, we define whitelisting property for blacklistable anonymous credentials and give a construction of this scheme. The whitelisting property can be used to unlink an honestly behaved authentication session from the user. Second, we propose an extension of this scheme for a particular use case, sharing economy services. This scheme allows a service provider to blacklist a user only if the user have not returned the shared asset in due time. We benchmark the performance of our schemes by comparing them with the rival schemes. Our experiments show that both of our scheme have comparable performance to previous works.
+            <div class="collapse" id="publishedpaperid8">
+            <div style="display: inline-block;">
+                <p><i>Abstract:</i>  Authentication and blacklisting mechanisms have a key role for service providers to deliver the service to correct users through digital channels. Nevertheless, there always have been concerns about privacy of the users against such mechanisms. The conditional anonymity concept is proposed as a remedy to these concerns. A recent approach in the literature for conditional anonymity is blacklistable anonymous credentials, which allows service providers to blacklist users for an authentication session without identifying the user. In this paper, we improve user anonymity in conditionally anonymous schemes using two complementary mechanisms. First, we define whitelisting property for blacklistable anonymous credentials and give a construction of this scheme. The whitelisting property can be used to unlink an honestly behaved authentication session from the user. Second, we propose an extension of this scheme for a particular use case, sharing economy services. This scheme allows a service provider to blacklist a user only if the user have not returned the shared asset in due time. We benchmark the performance of our schemes by comparing them with the rival schemes. Our experiments show that both of our scheme have comparable performance to previous works.</p>
+            </div>
             </div> 
         
 
