@@ -54,7 +54,7 @@ body {font-size:16px;}
   
   
     <div class="w3-container contentpage" id="contentpageid1" >
-      <h1 class="w3-xxxlarge pagetitle"><b>About Me.</b></h1>
+      <h1 class="w3-xxxlarge pagetitle"><b>About Me</b></h1>
       <hr class="w3-round titlesep">
       <p>
     I am a PhD student at the Hasso Plattner Institute, University of Potsdam, under the supervision of <a href="https://hpi.de/lehmann/home.html">Anja Lehmann</a>. 
@@ -70,10 +70,69 @@ body {font-size:16px;}
     </div>
   
     <div class="w3-container contentpage" id="contentpageid2" >
-      <h1 class="w3-xxxlarge pagetitle"><b>Publications.</b></h1>
+      <h1 class="w3-xxxlarge pagetitle"><b>Publications</b></h1>
       <hr class="w3-round titlesep">
       
+    <h3>Preprints</h3>
+    
+        
+        <div class="w3-panel paper">
+        <div><b>Putting Multi into Multi-Signatures: Tight Security for Multiple Signers.</b></div>
+        <div>with Anja Lehmann </div>
+        <div>
+            <span class="paperlinks">
 
+                
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#preprintpaperid1" href="javascript:void(0);">Abstract</a>]
+                
+
+                
+                    [<a class="eprintlink" target="_blank" href="https://eprint.iacr.org/2025/2198">Eprint</a>]
+                
+                
+                
+
+                
+            </span>       
+        </div>
+        
+            <div class="collapse" id="preprintpaperid1"><br><i>Abstract:</i> Multi-signatures enable multiple parties to create a joint signature on the same message. Such schemes aggregate several individual signatures and public keys into a short signature and aggregated public key, and verification is performed on these combined values. Interestingly, all existing notions of unforgeability for multi-signatures are designed with a single honest user in mind, overlooking the multi-user setting that multi-signatures are built for. While multi-user security can be bootstrapped from any single-user secure scheme, the straightforward adoption implies a security loss that is linear in the number of signers n. In this work we therefore start the investigation of multi-signatures with tight multi-user security. We show that none of the existing multi-signatures with tight single-user security seems amendable to the multi-user setting, as all their proofs and design choices exploit the fact that there is only a single honest user. Based on this insight, we then propose two new constructions built from scratch with multi-user security in mind: Skewer-NI, a non-interactive and pairing-based scheme, and Skewer-PF, a pairing-free and two-round construction. We prove both schemes tightly secure under the DDH assumption in the ROM. Both schemes also improve the state-of-the-art in another aspect: they support the feature of key aggregation. Skewer-NI is the first non-interactive tightly secure multi-signature with this feature. In the pairing-free two-round setting, Skewer-PF is the first to combine tight multi-user security with key aggregation where the only prior result, due to Bacho and Wagner (CRYPTO’25), achieved aggregation but only in the single-user case.
+            </div> 
+        
+
+        </div>
+    
+        
+        <div class="w3-panel paper">
+        <div><b>Multi-Verifier Keyed-Verification Anonymous Credentials.</b></div>
+        <div>with Jan Bobolz, Emad Heydari Beni, Anja Lehmann, Omid Mirzamohammadi, and Mahdi Sedaghat </div>
+        <div>
+            <span class="paperlinks">
+
+                
+                    [<a class="abstractlink" data-toggle="collapse" data-target="#preprintpaperid2" href="javascript:void(0);">Abstract</a>]
+                
+
+                
+                    [<a class="eprintlink" target="_blank" href="https://eprint.iacr.org/2025/2156">Eprint</a>]
+                
+                
+                
+
+                
+            </span>       
+        </div>
+        
+            <div class="collapse" id="preprintpaperid2"><br><i>Abstract:</i> Keyed-Verification anonymous credentials (KVAC) enable privacy-preserving authentication and can be seen as the symmetric primitive of conventional anonymous credentials: issuance and verification of credentials requires a shared secret key. The core advantage of KVACs is that they can be realized without pairings, which still appears to be a significant bottleneck when it comes to real-world adoption. KVACs provide all the benefits from anonymous credentials, in particular multi-show unlinkability, but only work in the setting where the issuer and verifier are the same entity, limiting the applications they can be used in. In this work we extend the idea of keyed-verification credential to a setting where again multiple verifiers are supported, each sharing an individual secret key with the issuer. We formally introduce this as multi-verifier keyed-verification anonymous credentials (mKVACs). While users must now get verifier-specific credentials, each credential still provides multi-show unlinkability. In terms of security, mKVAC naturally strengthens the single-verifier variant, as it guarantees that corruption of any verifier does not impact unforgeability guarantees for other verifiers. The main challenge therein is to not trade this added flexibility for privacy, and hide the verifier's identity in the credential issuance. We provide formal definitions of all desired security and privacy features and propose a provably secure and pairing-free construction. Along the way, we develop a new KVAC-like primitive that authenticates group elements and offers statistical privacy, solving the open problem of combining multi-verifier support and pairing-freeness. Finally, we demonstrate practicality of our protocol via implementation benchmarks.
+            </div> 
+        
+
+        </div>
+    
+
+
+
+    <h3>Published</h3>
 
 
 
@@ -82,7 +141,7 @@ body {font-size:16px;}
         <div><b>Game Changer: A Modular Framework for OPRF Security.</b></div>
         <div>with Karla Friedrichs and Anja Lehmann </div>
         <div>
-            To appear at ASIACRYPT'25
+            ASIACRYPT'25
             <span class="paperlinks">
 
                 
@@ -125,6 +184,8 @@ body {font-size:16px;}
                     [<a class="eprintlink" target="_blank" href="https://eprint.iacr.org/2025/1847">Eprint</a>]
                 
                 
+                
+                    [<a class="publishedlink" target="_blank" href="https://dl.acm.org/doi/10.1145/3719027.3765172">Published</a>]
                 
 
                 
@@ -352,15 +413,16 @@ body {font-size:16px;}
     </div>
   
     <div class="w3-container contentpage" id="contentpageid3" >
-      <h1 class="w3-xxxlarge pagetitle"><b>Activities.</b></h1>
+      <h1 class="w3-xxxlarge pagetitle"><b>Activities</b></h1>
       <hr class="w3-round titlesep">
       <h3>Subreviewed for</h3>
-<p>ASIACRYPT'25, CRYPTO'23</p>
+<p>EUROCRYPT'26, ASIACRYPT'25, CRYPTO'23</p>
 
 
 <h3>Teaching</h3>
 <h4>Hasso Plattner Institute (Teaching Assistant)</h4>
 <ul>
+    <li>Track Me If You Can: Attacking and Defending Batch-Issued Credentials, Winter 25/26</li>
     <li>Current Topics in Cryptography, Winter 24/25</li>
     <li>Cryptographic Protocols, Summer 23/24</li>
     <li>Anonymous Credentials, Summer 22/23</li>
