@@ -1,16 +1,8 @@
 preprints = [
     {
-        "title": "Putting Multi into Multi-Signatures: Tight Security for Multiple Signers",
-        "coauthors": "Anja Lehmann",
-        # "venue": "",
-        "year": 2025,
-        "eprint": "https://eprint.iacr.org/2025/2198",
-        "abstract": "Multi-signatures enable multiple parties to create a joint signature on the same message. Such schemes aggregate several individual signatures and public keys into a short signature and aggregated public key, and verification is performed on these combined values. Interestingly, all existing notions of unforgeability for multi-signatures are designed with a single honest user in mind, overlooking the multi-user setting that multi-signatures are built for. While multi-user security can be bootstrapped from any single-user secure scheme, the straightforward adoption implies a security loss that is linear in the number of signers n. In this work we therefore start the investigation of multi-signatures with tight multi-user security. We show that none of the existing multi-signatures with tight single-user security seems amendable to the multi-user setting, as all their proofs and design choices exploit the fact that there is only a single honest user. Based on this insight, we then propose two new constructions built from scratch with multi-user security in mind: Skewer-NI, a non-interactive and pairing-based scheme, and Skewer-PF, a pairing-free and two-round construction. We prove both schemes tightly secure under the DDH assumption in the ROM. Both schemes also improve the state-of-the-art in another aspect: they support the feature of key aggregation. Skewer-NI is the first non-interactive tightly secure multi-signature with this feature. In the pairing-free two-round setting, Skewer-PF is the first to combine tight multi-user security with key aggregation where the only prior result, due to Bacho and Wagner (CRYPTO’25), achieved aggregation but only in the single-user case."
-    },
-    {
         "title": "Multi-Verifier Keyed-Verification Anonymous Credentials",
         "coauthors": "Jan Bobolz, Emad Heydari Beni, Anja Lehmann, Omid Mirzamohammadi, and Mahdi Sedaghat",
-        # "venue": "",
+        "venue": " ",
         "year": 2025,
         "eprint": "https://eprint.iacr.org/2025/2156",
         "abstract": "Keyed-Verification anonymous credentials (KVAC) enable privacy-preserving authentication and can be seen as the symmetric primitive of conventional anonymous credentials: issuance and verification of credentials requires a shared secret key. The core advantage of KVACs is that they can be realized without pairings, which still appears to be a significant bottleneck when it comes to real-world adoption. KVACs provide all the benefits from anonymous credentials, in particular multi-show unlinkability, but only work in the setting where the issuer and verifier are the same entity, limiting the applications they can be used in. In this work we extend the idea of keyed-verification credential to a setting where again multiple verifiers are supported, each sharing an individual secret key with the issuer. We formally introduce this as multi-verifier keyed-verification anonymous credentials (mKVACs). While users must now get verifier-specific credentials, each credential still provides multi-show unlinkability. In terms of security, mKVAC naturally strengthens the single-verifier variant, as it guarantees that corruption of any verifier does not impact unforgeability guarantees for other verifiers. The main challenge therein is to not trade this added flexibility for privacy, and hide the verifier's identity in the credential issuance. We provide formal definitions of all desired security and privacy features and propose a provably secure and pairing-free construction. Along the way, we develop a new KVAC-like primitive that authenticates group elements and offers statistical privacy, solving the open problem of combining multi-verifier support and pairing-freeness. Finally, we demonstrate practicality of our protocol via implementation benchmarks."
@@ -18,6 +10,14 @@ preprints = [
 ]
 published = [
         {
+        "title": "Putting Multi into Multi-Signatures: Tight Security for Multiple Signers",
+        "coauthors": "Anja Lehmann",
+        "venue": "EUROCRYPT'26",
+        "year": 2026,
+        "eprint": "https://eprint.iacr.org/2025/2198",
+        "abstract": "Multi-signatures enable multiple parties to create a joint signature on the same message. Such schemes aggregate several individual signatures and public keys into a short signature and aggregated public key, and verification is performed on these combined values. Interestingly, all existing notions of unforgeability for multi-signatures are designed with a single honest user in mind, overlooking the multi-user setting that multi-signatures are built for. While multi-user security can be bootstrapped from any single-user secure scheme, the straightforward adoption implies a security loss that is linear in the number of signers n. In this work we therefore start the investigation of multi-signatures with tight multi-user security. We show that none of the existing multi-signatures with tight single-user security seems amendable to the multi-user setting, as all their proofs and design choices exploit the fact that there is only a single honest user. Based on this insight, we then propose two new constructions built from scratch with multi-user security in mind: Skewer-NI, a non-interactive and pairing-based scheme, and Skewer-PF, a pairing-free and two-round construction. We prove both schemes tightly secure under the DDH assumption in the ROM. Both schemes also improve the state-of-the-art in another aspect: they support the feature of key aggregation. Skewer-NI is the first non-interactive tightly secure multi-signature with this feature. In the pairing-free two-round setting, Skewer-PF is the first to combine tight multi-user security with key aggregation where the only prior result, due to Bacho and Wagner (CRYPTO’25), achieved aggregation but only in the single-user case."
+    },
+    {
         "title": "Game Changer: A Modular Framework for OPRF Security",
         "coauthors": "Karla Friedrichs and Anja Lehmann",
         "venue": "ASIACRYPT'25",
