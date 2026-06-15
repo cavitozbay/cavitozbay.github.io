@@ -1,4 +1,12 @@
 preprints = [
+        {
+        "title": "Invisible Traces: Subversion Attacks on Batch-Issued Credentials",
+        "coauthors": "Anna-Birgitta Burmeister, Anna Fennig, Andreas Franke, Karla Friedrichs, Anja Lehmann, Kurt-Kester Leißering, and Konrad Letz",
+        "venue": " ",
+        "year": 2026,
+        "eprint": "https://eprint.iacr.org/2026/1229",
+        "abstract": "All EU member states are required to roll out a digital identity system - the European Digital Identity (EUDI) wallet - by the end of 2026. Strong privacy is at the core of the underlying regulation, which mandates the EUDI wallet to support selective disclosure and unlinkability. The wallet currently being developed relies on the batch issuance of one-time ECDSA credentials that sign attributes through individually salted hashes for selective disclosure. This solution is known to achieve only a weak form of unlinkability, where the credential issuer must be honest: a malicious issuer could trace users through the salted hashes it signs and the signature value itself. But such a tracing attack requires the issuer to store all signed data and communicate with the verifying parties for tracing, which can be argued to be too cumbersome or obvious to happen in reality. In this work, we therefore initiate the study of a more subtle type of subversion attacks. Therein, the issuer can deviate from the issuance protocol, with two goals: (i) enabling verifiers in possession of a short tracing key to de-anonymize users and (ii) keeping this deviation undetectable from users. We formalize unlinkability against such subversion attacks, and show that batch-issued credentials with salted hashes do not achieve that form of privacy. We present several undetectable subversion attacks against batch-issued ECDSA credentials and suggest lightweight mechanisms to provably mediate them."
+    },
     {
         "title": "Multi-Verifier Keyed-Verification Anonymous Credentials",
         "coauthors": "Jan Bobolz, Emad Heydari Beni, Anja Lehmann, Omid Mirzamohammadi, and Mahdi Sedaghat",
